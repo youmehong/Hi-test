@@ -1,10 +1,10 @@
 # Site settings
-title: 디자이너에서 마개이너로
-description: "블로그 설명"
+title: Yumi Hong - 유미홍닷컴
+description: "안녕하세요, 홍유미입니다"
 url: "https://yumihong.com"
 author:
-  name: "블로거 이름"
-  email: "블로거 이메일"
+  name: "Yumi Hong"
+  email: "iam@yumihong.com"
   url: "https://yumihong.com"
 
 # Build settings
