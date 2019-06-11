@@ -8,12 +8,12 @@ layout: default
 
 	  <li class="post">
 			{% if post.image.feature %}
-					    <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/img/{{ post.image.feature }}"></a>
-					  {% endif %}
+			  <a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/img/{{ post.image.feature }}"></a>
+			{% endif %}
 
 	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
 	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
-	  	<p>{{ post.description | strip_html | truncatewords:50 }}</p>
+ 		 <p>{{ post.description | strip_html | truncatewords:50 }}</p>
 	  </li>
 
     {% endfor %}
