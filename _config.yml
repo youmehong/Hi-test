@@ -1,0 +1,44 @@
+# Site settings
+title: 디자이너에서 마개이너로
+description: "블로그 설명"
+url: "https://yumihong.com"
+author:
+  name: "블로거 이름"
+  email: "블로거 이메일"
+  url: "https://yumihong.com"
+
+# Build settings
+baseurl: /
+markdown: kramdown
+destination: /_site  # 이 부분 삭제
+permalink: /:title  # 이 부분 삭제
+paginate: 8
+paginate_path: /page:num/  # 이 부분 삭제
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-maps
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+# 블로그 disqus shortname
+disqus:
+  shortname: yumihong
