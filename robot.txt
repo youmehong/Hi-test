@@ -1,2 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /login/
+
+Sitemap: https://yumihong.com/sitemap.xml
