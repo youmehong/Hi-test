@@ -1,21 +1,14 @@
 ---
 layout: page
-title: About Emerald
+title: About Yumi Hong
 ---
-## About
-Emerald is a minimal theme created for Jekyll. The main purpose of Emerald is to provide a clear theme for those who want a blog ready to use, focused on the content and mobile-first.
+## About Yumi Hong
 
-For further details on Emerald, please visit the [repository on Github](https://github.com/KingFelix/emerald/).
 
-![Emerald](img/Emerald01.png "Emerald")
+안녕하세요, 홍유미입니다.
+앞으로 디자이너로서, 마케터로서,
+그리고 이제 개발 영역을 처음 시작하는 개린이로서 이 웹페이지를 채워나갑니다.
 
-### Setup
-Emerald may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/KingFelix/emerald/archive/master.zip).
+I love to see every single passionate element wherever it is at. (somewhat like sport advertisement which can make your heart beat!) I can get ideas as many as possible from many information, so I can reduce some mistakes what I will have for the future. So I take a little longer time for researching to look for what is going on the outside in the world.
 
-After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/emerald/`` and you will find it there.
-
-Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Emerald in the root. 
-
-Last but not least: the [Jekyll documentation](http://jekyllrb.com) is the best starting point!
-
-Enjoy!
+[https://linkedin.com/in/yumihong/](https://www.linkedin.com/in/yumihong/)
