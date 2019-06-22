@@ -15,26 +15,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="generator" content="Jekyll">
 
-  <!--이곳에 사이트 소유 확인을 위한 네이버 웹마스터 도구 메타 태그 추가-->
+  <!--네이버 웹마스터 도구 메타 태그 추가-->
 	<meta name="naver-site-verification" content="a5241b21a09df76919f1e367996ab161bd02e56e"/>
 
- <!--사이트 설명-->
- <meta name="description" content="마케터와 개발자와 디자이너 그 사이 어딘가">
-
- <!--오픈그래프-->
- <meta property="og:type" content="website">
- <meta property="og:title" content="Yumi Hong | 유미홍닷컴">
- <meta property="og:description" content="안녕하세요, 홍유미입니다">
- <meta property="og:image" content="http://yumihong.com/img/yumihong%20logo.svg">
- <meta property="og:url" content="https://yumihong.com/">
-
-	<title>
-{%if page.title %}
-	{{ page.title }} | {{ site.title }}
-{% else %}
-	{{ site.title }} | {{ site.tagline }}
-{% endif %}
-</title>
+ <title>
+	 {%if page.title %}
+		 {{ page.title }} | {{ site.title }}
+	 {% else %}
+		 {{ site.title }} | {{ site.tagline }}
+	 {% endif %}
+ </title>
 
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
@@ -93,6 +83,6 @@
 	    <meta property="article:tag" content="{{ tag }}" />
 	    {% endfor %}
 	  {% endif %}
-	  <!-- End SEO Tag -->
+	<!-- End SEO Tag -->
 
 </head>
