@@ -7,20 +7,20 @@
 
 body {
 	font-family: 'Noto Sans KR', sans-serif;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 }
 
 /*- Typography for medium and small screen, based on 16px font-size -*/
 
 p, ul, ol {
-	font-size: 0.75em; /* 12px */
+	font-size: 1em; /* 16px */
 	line-height: 1.5em; /* 24px/16px */
 	margin-bottom: 1.5em; /* 24px/16px */
 }
 
 h1 {
-	font-size: 2.25em; /* 36px/16px */
-	line-height: 1.3333em; /* 48px/36px */
+	font-size: 2em; /* 36px/16px */
+	line-height: 1em; /* 48px/36px */
 	padding: 0.33335em 0; /* 12px/36px * 2 (Use padding instead of margin to maintain proximity with paragraph) */
 }
 
