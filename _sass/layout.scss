@@ -7,7 +7,7 @@ html, body {
 
 /* Navigation */
 
-#nav, #nav-left { 
+#nav, #nav-left {
   a {
     display: block;
     color: $background-color;
@@ -256,17 +256,17 @@ footer {
   background-color: $main-color;
   color: $background-color;
   text-align: center;
-  padding: 0.6667em 0;
+  padding: 0.3em 0;
 }
 
 #wrap {
-	min-height:100%; 
+	min-height:100%;
 	position:relative;
-	padding-bottom: 105px;
+	padding-bottom: 100px;
 }
 
 .footer {
-	padding: 25px 0;
+	padding: 8px 0;
 	background-color: $main-color;
 	color: $background-color;
 	text-align: center;
