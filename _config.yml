@@ -9,7 +9,7 @@ author:
   url: "https://yumihong.com"
 
 # Build settings
-baseurl: {{ site.url }}
+baseurl: /
 markdown: kramdown
 destination: /_site  # 이 부분 삭제
 permalink: /:title  # 이 부분 삭제
