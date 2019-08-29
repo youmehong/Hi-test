@@ -10,7 +10,7 @@ title: About Yumi Hong
 
 
 
-안녕하세요, 홍유미입니다. 
+안녕하세요, 홍유미입니다.
 
 앞으로 **디자이너**로서, **마케터**로서,
 
@@ -23,6 +23,3 @@ title: About Yumi Hong
 [Linkedin](https://www.linkedin.com/in/yumihong/)
 
 [Github](https://github.com/youmehong/)
-
-
-
