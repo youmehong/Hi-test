@@ -14,9 +14,9 @@
 .post-date {
   color: _palette(meta);
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.0em;
 }
 
 .post-meta {
@@ -35,13 +35,13 @@
 }
 
 .post-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 0 1rem;
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     letter-spacing: normal;
-    line-height: 1.2;
+    line-height: 1.0;
   }
 
   a {
@@ -81,7 +81,7 @@
   }
 
   .author-bio {
-    line-height: 1.5;
+    line-height: 1.0;
 
     p {
       margin-bottom: 1em;
@@ -102,7 +102,7 @@
   @media only screen and (max-width: 480px) {
     .author-avatar {
       float: none;
-      margin-bottom: 1.25em;
+      margin-bottom: 1.0em;
       margin-right: 0;
     }
 
@@ -126,7 +126,7 @@
     border-radius: 3px;
     color: _palette(primary);
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0.5em;
     margin-right: 5px;
     padding: 3px 10px;
@@ -168,7 +168,7 @@
 .archive-meta {
   color: _palette(meta);
   .archive-date {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: bold;
   }
 }

@@ -17,14 +17,14 @@
 .site-title {
   color: _palette(secondary);
   font-family: _font(primary);
-  font-size: 1.5rem;
+  font-size: 1.43rem;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
   margin: 0 15px 0 0;
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: normal;
   }
 
