@@ -1,79 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang | default: 'ko-KR' }}">
+<head>
 
-{% include head.html %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }} Feed"
+    href="{{ '/feed.xml' | absolute_url }}">
+  {% if site.favicon and site.favicon != "" %}
+  <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/png" />
+  {% endif %}
 
+  <!-- SEO Tag -->
+    <meta name="twitter:card" content="summary_large_image" />
+    {% if page.title %}
+      <meta property="og:title" content="{{ page.title }}" />
+      <meta name="twitter:title" content="{{ page.title }}" />
+    {% else %}
+      <meta property="og:title" content="{{ site.title }} | {{ site.tagline }}" />
+      <meta name="twitter:title" content="{{ site.title }} | {{ site.tagline }}" />
+    {% endif %}
+    {% if page.title %}
+      <meta property="og:type" content="article" />
+    {% else %}
+      <meta property="og:type" content="website" />
+    {% endif %}
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta name="twitter:description" content="{{ page.description }}" />
+    {% else %}
+      <meta name="description" content="{{ site.description }}" />
+      <meta property="og:description" content="{{ site.description }}" />
+      <meta name="twitter:description" content="{{ site.description }}" />
+    {% endif %}
+    {% if page.url %}
+      <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+      <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% endif %}
+    {% if page.date %}
+      <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+      <meta property="article:author" content="{{ page.author }}" />
+    {% endif %}
+    {% if page.image %}
+      <meta property="og:image" content="{{ site.github.url }}/img/thumbnail/{{ page.image.feature }}" />
+      <meta name="twitter:image:src" content="{{ site.github.url }}/img/thumbnail/{{ page.image.feature }}" />
+    {% else %}
+      <meta property="og:image" content="{{ site.github.url }}/img/thumbnail/thumbnail.png" />
+      <meta name="twitter:image:src" content="{{ site.github.url }}/img/thumbnail/thumbnail.png" />
+    {% endif %}
+      <meta property="og:locale" content="ko_KR" />
+      <meta property="og:site_name" content="{{ site.title }}" />
+    {% if page.categories %}
+      {% for category in page.categories limit:1 %}
+      <meta property="article:section" content="{{ category }}" />
+      {% endfor %}
+    {% endif %}
+    {% if page.tags %}
+      {% for tag in page.tags %}
+      <meta property="article:tag" content="{{ tag }}" />
+      {% endfor %}
+    {% endif %}
+  <!-- End SEO Tag -->
+
+
+
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+  <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+</head>
 <body>
 
-	<!-- Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRXB8ZV"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-	<div id="wrap">
+  <div id="page" class="site">
+    <div class="inner">
+      {% include header.html %}
+      {{content}}
+      {% include footer.html %}
+    </div><!-- .inner -->
+  </div><!-- .site -->
 
-	  	<!-- Navigation -->
-	  	{% include menu.html %}
+  <!-- Scripts -->
+  <script src="{{ '/assets/js/plugins.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
 
-    <!-- Icon menu -->
-	  <a {% if site.reverse == true %}id="nav-menu-right"{% else %}id="nav-menu"{% endif %}>
-	  	<div id="menu"></div>
-	  </a>
-
-      <!-- Header -->
-      {% if site.custom_header == true %}
-        {% include header-custom.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif %}
-
-    <!-- Main content -->
-	  <div id="container">
-
-		<main>
-
-			{{ content }}
-
-	  </main>
-
-		  <!-- Pagination links -->
-      {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-          {% if paginator.previous_page == 1 %}
-            <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-          {% elsif paginator.previous_page%}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&laquo;</a>
-          {% else %}
-            <span class="page-item">&laquo;</span>
-          {% endif %}
-
-          {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-              <span class="page-item">{{ page }}</span>
-            {% elsif page == 1 %}
-              <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">{{ page }}</a>
-            {% else %}
-              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="page-item">{{ page }}</a>
-            {% endif %}
-          {% endfor %}
-
-          {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="page-item">&raquo;</a>
-          {% else %}
-            <span class="page-item">&raquo;</span>
-          {% endif %}
-        </div>
-        {% endif %}
-
-	  </div>
-
-	    <!-- Footer -->
-	    {% include footer.html %}
-
-	    <!-- Script -->
-      {% include script.html %}
-
-	</div>
 </body>
-
 </html>

@@ -1,45 +1,71 @@
-# Site settings
-title: Yumi Hong
-tagline: 유미홍닷컴
-description: 디자이너와 개발자의 그 사이
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site language
+lang: ko-KR
+
+# Site title
+title: "Yumi Hong"
+tagline: 디자이너와 마케터, 그 사이 혼란을 틈탄 마개이너
+
+# A description of your site for meta tag, search engine results.
+description: "디자이너와 마케터, 그 사이 혼란을 틈탄 마개이너"
+
+# The subpath of your site, e.g. /blog, for generating urls.
+baseurl: ""
+
+# The base hostname & protocol of your site for where absolute urls are needed.
 url: "https://yumihong.com"
-author:
-  name: "Yumi Hong"
-  email: "iam@yumihong.com"
-  url: "https://yumihong.com"
 
-# Build settings
-baseurl: /
-markdown: kramdown
-destination: /_site  # 이 부분 삭제
-permalink: /:title  # 이 부분 삭제
-paginate: 8
-paginate_path: /page:num/  # 이 부분 삭제
+# Favicon
+favicon: /images/favicon.png
 
-# Default values
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+# Site navigation - each item must have a title and a url.
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about/
+  - text: 마개이너 스토리
+    url: /
+  - text: Tags
+    url: /tags/
+  - text: Mail
+    url: mailto:iam@yumihong.com
+
+# The shortname for your Disqus site to enable comments.
+disqus: yumihong
+
+# Colors
+accent_color: '#2d72d9'
+
+# Site footer
+footer:
+  content: "Copyright 2019.Yumi Hong. All rights reserved."
+  has_social: true
 
 # Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-maps
 
-# Custom variables
-version: "1.1.0"
+# http://jekyllrb.com/docs/pagination/
+paginate: 3
+paginate_path: '/page:num/'
 
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
 
-# 블로그 disqus shortname
-disqus:
-  shortname: yumihong
+# Permalinks
+permalink: /:title
+
+# Conversion
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
