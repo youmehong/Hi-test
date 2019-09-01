@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yumihong.com/sitemap.xml
