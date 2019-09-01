@@ -1,5 +1,5 @@
 /* ==========================================================================
-   10. PrismJS 1.17.1
+   10. PrismJS 1.17.1 
    https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+json+yaml
    ========================================================================== */
 
@@ -7,14 +7,14 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: _palette(secondary);
   background: none;
-  font-family: Consolas, 'Noto Sans KR', 'sans-serif';
+  font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
   font-size: 0.88889rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.2;
+  line-height: 1.5;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -123,3 +123,4 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+ 

@@ -16,15 +16,15 @@
 
 .site-title {
   color: _palette(secondary);
-  font-family: _font(primary);
-  font-size: 1.43rem;
+  font-family: _font(secondary);
+  font-size: 1.66667rem;
   font-weight: bold;
   letter-spacing: -1px;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0 15px 0 0;
 
   @media only screen and (max-width: 600px) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: normal;
   }
 
@@ -54,7 +54,7 @@
   a {
     color: _palette(meta);
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.88889rem;
     font-weight: bold;
     padding: 5px 0;
     text-decoration: none;
@@ -119,7 +119,7 @@
     visibility: hidden;
     z-index: -1;
   }
-
+  
   .site-navigation-wrap {
     height: 100%;
     overflow: auto;

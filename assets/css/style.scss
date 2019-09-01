@@ -25,17 +25,17 @@
 
 // Font.
 $font: (
-  primary: ("Noto Sans KR",Helvetica,sans-serif),
-  secondary: ("Noto Sans KR",Helvetica,sans-serif)
+  primary: ("Lato","Helvetica Neue",Helvetica,sans-serif),
+  secondary: ("Noto Serif",Georgia,serif)
 );
 
 // Palette.
-{% assign accent = site.accent_color | default: '#2d5c3c' %}
+{% assign accent = site.accent_color | default: '#2d72d9' %}
 $palette: (
   accent:    {{ accent }},
-  primary:   #6b7a72,
-  secondary: #2c3c31,
-  meta:      #9bada2,
+  primary:   #6b747a,
+  secondary: #2c343c,
+  meta:      #9ba6ad,
   border:    #d7d7d7,
   bg:        #fbfbfb
 );
