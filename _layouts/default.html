@@ -66,11 +66,11 @@
       <meta property="article:author" content="{{ page.author }}" />
     {% endif %}
     {% if page.image %}
-      <meta property="og:image" content="{{ site.github.url }}images/thumbnail/{{ page.image.feature }}" />
-      <meta name="twitter:image:src" content="{{ site.github.url }}/images/thumbnail/{{ page.image.feature }}" />
+      <meta property="og:image" content="{{ site.url }}images/thumbnail/{{ page.image.feature }}" />
+      <meta name="twitter:image:src" content="{{ site.url }}/images/thumbnail/{{ page.image.feature }}" />
     {% else %}
-      <meta property="og:image" content="{{ site.github.url }}/images/thumbnail/thumbnail.png" />
-      <meta name="twitter:image:src" content="{{ site.github.url }}/images/thumbnail/thumbnail.png" />
+      <meta property="og:image" content="{{ site.url }}/images/thumbnail/thumbnail.png" />
+      <meta name="twitter:image:src" content="{{ site.url }}/images/thumbnail/thumbnail.png" />
     {% endif %}
       <meta property="og:locale" content="ko_KR" />
       <meta property="og:site_name" content="{{ site.title }}" />

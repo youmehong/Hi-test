@@ -12,14 +12,14 @@ lang: ko-KR
 title: Yumi Hong | 유미홍 닷컴
 
 # A description of your site for meta tag, search engine results.
-description: "디자이너와 마케터, 그 사이 혼란을 틈탄 마개이너"
+description: "디자이너와 마케터, 그 사이 마개이너"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: /
 
 # The base hostname & protocol of your site for where absolute urls are needed.
 url: "https://yumihong.com"
-thumbnail: /images/favicon.png
+thumbnail: /images/thumbnail.png
 
 # Favicon
 favicon: /images/favicon.png
