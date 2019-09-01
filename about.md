@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About this blog
-permalink: /about.html
+permalink: /about/
 description: 안녕하세요, 홍유미 입니다.
 ---
 
