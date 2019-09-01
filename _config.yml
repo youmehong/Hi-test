@@ -18,7 +18,7 @@ description: "디자이너와 마케터, 그 사이 혼란을 틈탄 마개이�
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "Yumi Hong"
+url: "https://yumihong.com"
 
 # Favicon
 favicon: /images/favicon.png
