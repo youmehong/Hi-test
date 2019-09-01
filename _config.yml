@@ -10,6 +10,7 @@ lang: ko-KR
 
 # Site title
 title: "Yumi Hong"
+tagline: "유미홍 닷컴"
 
 # A description of your site for meta tag, search engine results.
 description: "디자이너와 마케터, 그 사이 혼란을 틈탄 마개이너"
@@ -28,11 +29,11 @@ navigation:
   - text: Home
     url: /
   - text: About
-    url: about/
+    url: /about/
   - text: 마개이너 스토리
     url: /
   - text: Tags
-    url: tags/
+    url: /tags/
   - text: Mail
     url: mailto:iam@yumihong.com
 
