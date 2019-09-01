@@ -11,7 +11,7 @@ textarea {
 }
 
 html {
-  border: 15px solid _palette(accent);
+  border: 0px solid _palette(accent);
   box-sizing: border-box;
 
   @media only screen and (max-width: 600px) {
@@ -58,7 +58,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1.11111;
   letter-spacing: -1px;
 
@@ -70,7 +70,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.66667rem;
+  font-size: 1.1rem;
   letter-spacing: -1px;
 
   @media only screen and (max-width: 600px) {
@@ -80,7 +80,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.33333rem;
+  font-size: 1.0rem;
 
   @media only screen and (max-width: 600px) {
     font-size: 1.25em;
@@ -88,15 +88,15 @@ h3 {
 }
 
 h4 {
-  font-size: 1.11111rem;
+  font-size: 0.9rem;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 h6 {
-  font-size: 0.88889rem;
+  font-size: 0.7rem;
 }
 
 p {

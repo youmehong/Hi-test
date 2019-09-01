@@ -6,19 +6,19 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site language
-lang: en-US
+lang: ko-KR
 
 # Site title
-title: "Scriptor"
+title: "Yumi Hong"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "디자이너와 마케터, 그 사이 혼란을 틈탄 마개이너"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://scriptor-jekyll.netlify.com"
+url: "Yumi Hong"
 
 # Favicon
 favicon: /images/favicon.png
@@ -29,22 +29,22 @@ navigation:
     url: /
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
+  - text: 마개이너 스토리
+    url: /
   - text: Tags
     url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  - text: Mail
+    url: mailto:iam@yumihong.com
 
 # The shortname for your Disqus site to enable comments.
-disqus: justgoodthemes
+disqus: yumihong
 
 # Colors
 accent_color: '#2d72d9'
 
 # Site footer
 footer:
-  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  content: Copyright 2019.Yumi Hong. All rights reserved.
   has_social: true
 
 # Plugins
