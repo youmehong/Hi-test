@@ -20,6 +20,7 @@ baseurl: /
 
 # The base hostname & protocol of your site for where absolute urls are needed.
 url: "https://yumihong.com"
+thumbnail: /images/favicon.png
 
 # Favicon
 favicon: /images/favicon.png
