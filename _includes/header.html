@@ -68,6 +68,10 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2377509105824755');
   fbq('track', 'PageView');
+  var content_ids = "post-title"
+  fbq('track', 'ViewContent'),{
+    content_ids: "post-title"
+  };
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=2377509105824755&ev=PageView&noscript=1"
