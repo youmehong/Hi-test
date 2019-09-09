@@ -70,7 +70,7 @@
   fbq('track', 'PageView');
   var content_ids = {{ page.title }};
   fbq('track', 'ViewContent'),{
-    content_ids: "{{ page.title }}"
+    content_ids: {{ page.title }}
   };
 </script>
 
