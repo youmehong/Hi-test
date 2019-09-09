@@ -68,8 +68,9 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2377509105824755');
   fbq('track', 'PageView');
+  var content_ids = "{{page.title}}";
   fbq('track', 'ViewContent'),{
-    content_ids: {{ page.title }}
+    ViewContent: "{{page.title}}"
   };
 </script>
 
