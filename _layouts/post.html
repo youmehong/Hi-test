@@ -2,12 +2,6 @@
 layout: default
 ---
 
-<script>
-    fbq('track', 'ViewContent', {
-      content_name: "{{post.title}}"
-    });
-</script>
-
 
 <main class="main-content fadeInDown delay_075s">
 
@@ -57,3 +51,10 @@ layout: default
   {% endif %}
 
 </main><!-- .main-content -->
+
+
+<script>
+    fbq('track', 'ViewContent', {
+      content_name: "{{post.title}}"
+    });
+</script>
