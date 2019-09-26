@@ -50,3 +50,12 @@ layout: default
   {% endif %}
 
 </main><!-- .main-content -->
+
+
+<script>
+  dataLayer.push({
+      'event' : 'viewContent',
+      'contentId' : '{{ page.content_id }}',
+      'contentTitle' : '{{ page.title }}'
+  });
+</script>
